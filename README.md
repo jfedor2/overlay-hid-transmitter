@@ -10,6 +10,8 @@ If you want to combine the inputs generated this way with inputs from other sour
 
 For downloads see the [latest release](https://github.com/jfedor2/overlay-hid-transmitter/releases/latest).
 
+See also: [Face HID Transmitter](https://github.com/jfedor2/face-hid-transmitter), [Voice HID Transmitter](https://github.com/jfedor2/voice-hid-transmitter).
+
 ![Screenshot](images/screenshot.png)
 
 ## Usage
@@ -55,3 +57,9 @@ Pass `--start` on the command line to start in the running state.
 
 - If the game you want to control is on the same machine and uses the mouse, that may interfere with our screen overlay. If the game uses the mouse but doesn't need it, you can try the "Block mouse movement from apps" setting. If the game captures the mouse for itself, you can try alt-tabbing away from it so that it releases the mouse cursor. However most games won't read gamepad inputs when their window is not in focus, so you're probably out of luck anyway.
 - Because of [UIPI](https://en.wikipedia.org/wiki/User_Interface_Privilege_Isolation), the mouse hook may not see clicks that go to elevated (administrator) windows. If that's a problem, run this as administrator too.
+
+## License and acknowledgements
+
+The software in this repository is licensed under the [MIT License](LICENSE).
+
+The UI uses [Dear ImGui](https://github.com/ocornut/imgui) (MIT) and configuration uses [nlohmann/json](https://github.com/nlohmann/json) (MIT).
